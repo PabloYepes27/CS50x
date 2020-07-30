@@ -1,4 +1,4 @@
-# Week 2
+# [Week 2](https://cs50.harvard.edu/x/2020/weeks/2/)
 
 ## Contents:open_file_folder:
 
@@ -93,6 +93,8 @@ make name_file
 ## Resources:books:
 
 Read or watch:
+
+*[Notes](https://cs50.harvard.edu/x/2020/notes/2/)
 
 * Hacker’s Delight, Second Edition
 Henry S. Warren Jr.
