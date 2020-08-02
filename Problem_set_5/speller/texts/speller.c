@@ -1,4 +1,5 @@
 // Implements a spell-checker
+// All this code is from the team of CS50
 
 #include <ctype.h>
 #include <stdio.h>
