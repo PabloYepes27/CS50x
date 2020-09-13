@@ -1,4 +1,4 @@
-# [Week 3](https://cs50.harvard.edu/x/2020/weeks/3/)
+# CS50x 2020
 
 ## Contents:open_file_folder:
 
@@ -14,24 +14,7 @@
 
 ## Project Description:newspaper:
 
-Searching
-Big O
-Linear search
-Structs
-Sorting
-Selection sort
-Recursion
-Merge sort
-
-* Shorts
-- Linear Search
-- Binary Search
-- Bubble Sort
-- Selection Sort
-- Insertion Sort
-- Recursion
-- Merge Sort
-- Algorithms Summary
+Introduction to the intellectual enterprises of computer science and the art of programming. This course teaches students how to think algorithmically and solve problems efficiently. Topics include abstraction, algorithms, data structures, encapsulation, resource management, security, and software engineering. Languages include C, Python, and SQL plus students’ choice of: HTML, CSS, and JavaScript (for web development); Java or Swift (for mobile app development); or Lua (for game development). Problem sets inspired by the arts, humanities, social sciences, and sciences. Course culminates in a final project. Designed for concentrators and non-concentrators alike, with or without prior programming experience. Two thirds of CS50 students have never taken CS before. Among the overarching goals of this course are to inspire students to explore unfamiliar waters, without fear of failure, create an intensive, shared experience, accessible to all students, and build community among students.
 
 ---
 
@@ -39,7 +22,8 @@ Merge sort
 
 You are expected to
 
-* submit almost two problems at the end
+* submit nine problem sets and
+* submit a final project.
 
 ---
 
@@ -65,29 +49,26 @@ make name_file
 
 ## Tasks:clipboard:
 
-### [Plurality]
-* Description: 
+### [Problem Set 1]
+* Complete: Hello, Mario (Less) or Mario (More), Cash or Credit
 
-
-### [Runoff]
-* Description: 
-
-### [Tideman]
-* Description:
 
 ---
 
 ## Built with:hammer:
 
 * C
+* Python
+* SQL
+* Html
+* Css
+* Javascript
 
 ---
 
 ## Resources:books:
 
 Read or watch:
-
-* [Notes](https://cs50.harvard.edu/x/2020/notes/3/#:~:text=SearchingBig%20OLinear%20searchStructsSortingSelection%20sortRecursionMerge%20sort)
 
 * Hacker’s Delight, Second Edition
 Henry S. Warren Jr.
