@@ -1,59 +1,39 @@
-#!/usr/bin/python3
+from sys import argv, exit
 import csv
-from sys import argv
 
 
-if __name__ == "__main__":
-    if len(argv) is not 3:
-        exit("Usage: python dna.py data.csv sequence.txt")
+def max_substring(chain, substr):
+    ans = [0] * len(chain)
+    for i in range(len(chain) - len(substr), -1, -1):
+        if chain[i: i + len(substr)] == substr:
+            if i+ len(substr) > len(chain) - 1:
+                ans[i] = 1
+            else:
+                ans[i] = 1 + ans[i + len(substr)]
+    return max(ans)
 
-    str_list = []
 
-    with open(argv[1], newline='') as dna_db:
-        db_reader = csv.DictReader(dna_db)
-        for row in db_reader:
-            keys = dict(row).keys()
-            for i in keys:
-                if i not in str_list:
-                    str_list.append(i)
+def print_match(reader, actual):
+    for line in reader:
+        person = line[0]
+        values = [int(val) for val in line[1:]]
+        if values == actual:
+            print(person)
+            return
+    print("no match")
 
-    str_dict = {}
-    str_count = []
-    aux_count = 0
 
-    with open(argv[2]) as file:
-        chain = file.read()
-        for i in range(len(chain)):
-            str_count.append(0)
+def main():
+    if len(argv) != 3:
+        print("Usage: python dna.py data.csv sequence.txt")
+        exit(1)
 
-    for let in range(len(chain)):
-        for elem in str_list:
-            str_aux = chain[let:let + len(elem)]
-            jump = let
-            while (str_aux == elem):
-                str_count[let] += 1
-                jump += len(elem)
-                str_aux = chain[jump: jump + len(elem)]
-            if type(str_dict.get(elem)) is int:
-                aux_count = str_dict.get(elem)
-            if max(str_count) is not 0 and max(str_count) > aux_count:
-                str_dict[elem] = max(str_count)
-            str_count[let] = 0
-            aux_count = 0
+    with open(argv[1]) as dna_db:
+        db_reader = csv.reader(dna_db)
+        all_sequences = next(db_reader)[1:]
 
-    find = 0
+        with open(argv[2]) as txt_file:
+            chain = txt_file.read()
+            actual = [max_substring(chain, seq) for seq in all_sequences]
 
-    with open(argv[1], newline='') as dna_db:
-        db_reader = csv.DictReader(dna_db)
-        for row in db_reader:
-            for key_row in row.keys():
-                for key_str in str_dict.keys():
-                    if key_row == key_str:
-                        if int(row[key_row]) == str_dict[key_str]:
-                            find += 1
-            if find == len(str_list) - 1:
-                print(row["name"], sep="")
-                break
-            find = 0
-    if find is 0:
-        print("No match")
+    print_match(db_reader, actual)
