@@ -1,44 +1,25 @@
-# [Week 4](https://cs50.harvard.edu/x/2020/weeks/4/)
+# [recover](https://cs50.harvard.edu/x/2020/psets/4/recover/#:~:text=submit50%20cs50/problems/2020/x/recover)
 
 ## Contents:open_file_folder:
 
-- Project Description:newspaper:
+- Description:newspaper:
 - General Objectives:bulb:
 - Instalation:wrench:
-- Command Interpreter Description:computer:
-
-	* How to start it
-	* Commands and their usage
-	* How to use it
-	* examples
-
-- Unittests:boom:
-- Tasks:clipboard:
 - Built with:hammer:
 - Resources:books:
 - Author:black_nib:
 
 ---
 
-## Project Description:newspaper:
+## Description:newspaper:
 
-Hexadecimal
-Pointers
-string
-Compare and copy
-valgrind
-Swap
-Memory layout
-get_int
-Files
-JPEG
+Implement a program called recover that recovers JPEGs from a forensic image.
 
-* Shorts
-- Hexadecimal
-- Pointers
-- Dynamic Memory Allocation
-- Call Stacks
-- File Pointers
+Implement your program in a file called recover.c in a directory called recover.
+Your program should accept exactly one command-line argument, the name of a forensic image from which to recover JPEGs.
+If your program is not executed with exactly one command-line argument, it should remind the user of correct usage, and main should return 1.
+If the forensic image cannot be opened for reading, your program should inform the user as much, and main should return 1.
+Your program, if it uses malloc, must not leak any memory.
 
 ---
 
@@ -46,7 +27,7 @@ JPEG
 
 You are expected to
 
-* submit almost two problems at the end
+* Implement a program that recovers JPEGs from a forensic image, per the below.
 
 ---
 
@@ -61,27 +42,13 @@ https://github.com/PabloYepes27/CS50x.git
 
 * Compile it with GCC
 ```
-make name_file
+make recover
 ```
 
 * Run the program
 ```
-./name_file
+./recover card.raw
 ```
----
-
-## Tasks:clipboard:
-
-### [Filter 1]
-* Description: 
-
-
-### [Filter 2]
-* Description: 
-
-### [Recovery]
-* Description:
-
 ---
 
 ## Built with:hammer:
@@ -114,10 +81,25 @@ ISBN 0-321-77641-0
 
 ---
 
-## Author:black_nib:
+## Authors:black_nib:
+
+* **David J. Malan**
+Gordon McKay Professor of the Practice of Computer Science
+Harvard University
+
+* **Doug Lloyd**
+Senior Preceptor in Computer Science
+Harvard University
+
+* **Bryan Yu**
+Senior Preceptor in Computer Science
+Harvard University
+
+### Author Repo
 
 * **Juan Pablo Yepes Tamayo**
  - [GitHub](https://github.com/PabloYepes27)
  - [Linkedin](https://www.linkedin.com/in/pablo-yepes-120495)
  - [Twitter](https://twitter.com/pabloyepes27)
+
 

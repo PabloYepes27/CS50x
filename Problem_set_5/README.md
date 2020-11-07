@@ -5,14 +5,6 @@
 - Project Description:newspaper:
 - General Objectives:bulb:
 - Instalation:wrench:
-- Command Interpreter Description:computer:
-
-	* How to start it
-	* Commands and their usage
-	* How to use it
-	* examples
-
-- Unittests:boom:
 - Tasks:clipboard:
 - Built with:hammer:
 - Resources:books:
@@ -130,7 +122,21 @@ ISBN 0-321-77641-0
 
 ---
 
-## Author:black_nib:
+## Authors:black_nib:
+
+* **David J. Malan**
+Gordon McKay Professor of the Practice of Computer Science
+Harvard University
+
+* **Doug Lloyd**
+Senior Preceptor in Computer Science
+Harvard University
+
+* **Bryan Yu**
+Senior Preceptor in Computer Science
+Harvard University
+
+### Author Repo
 
 * **Juan Pablo Yepes Tamayo**
  - [GitHub](https://github.com/PabloYepes27)
